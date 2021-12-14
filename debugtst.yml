@@ -1,0 +1,7 @@
+---
+ - name: Display the message using debug module
+   hosts: all
+   tasks:
+    - name: Test playbook using in Ansible Tower
+      debug:
+       msg: Welcome to Ansible Tower test playbook
