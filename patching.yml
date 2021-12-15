@@ -1,0 +1,11 @@
+---
+ - name: Oracle Linux Patching
+   hosts: app
+   gather_facts: false
+   tasks:
+    - name: Install Patching
+      yum: 
+       name: "*" 
+       state: latest
+      become: yes
+       
