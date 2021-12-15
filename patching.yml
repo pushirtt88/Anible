@@ -1,6 +1,6 @@
 ---
  - name: Oracle Linux Patching
-   hosts: app
+   hosts: all
    gather_facts: false
    tasks:
     - name: Install Patching
