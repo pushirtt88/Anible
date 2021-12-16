@@ -1,7 +1,7 @@
 ---
  - name: Oracle Linux Patching
    hosts: all
-   gather_facts: true
+   gather_facts: false
    tasks:
     - name: Install Patching
       yum: 
