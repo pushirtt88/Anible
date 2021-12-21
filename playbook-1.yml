@@ -1,0 +1,17 @@
+---
+ - name: Creating the Variables 
+   hosts: app
+   gather_facts: false
+   vars:
+    name: "Pushparaj"
+    Company: "Wipro Limited"
+    Location: "Chennai"
+   tasks:
+    - name: Executing the variables
+      debug:
+       msg: 
+        - "My Name is {{name}}"
+        - "I am working in {{company}} company"
+        - "My current working location {{location}}"
+
+      
