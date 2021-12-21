@@ -1,6 +1,6 @@
 ---
  - name: Creating the Variables 
-   hosts: app
+   hosts: webserver
    gather_facts: false
    vars:
     name: "Pushparaj"
