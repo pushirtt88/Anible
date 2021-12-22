@@ -7,6 +7,7 @@
       copy: 
        src: /home/ansadmin/file1cp.txt
        dest: /home/ansadmin/
+   ignore_errors: yes
        
  - name: File creation
    hosts: DB Server
