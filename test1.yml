@@ -1,0 +1,19 @@
+---
+ - name: Array Examples
+   hosts: webserver
+   gather_facts: false
+   vars_prompt:
+    - name: stud_name
+      prompt: "Enter your name"
+    - name: std_class
+      prompt: "Enter the studying standard"
+    - name: school
+      prompt: "Enter your school Name"
+    
+   tasks:
+    - name: Please Print the name
+      debug:
+       msg: 
+        - "Please enter the name {{stud_name}}"
+        - "Please enter the studying class {{std_class}}"
+        - "Please enter the school Name {{school}}"
