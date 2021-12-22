@@ -14,6 +14,6 @@
    tasks:
     - name: create the file 
       file: 
-       path: /home/admin
+       path: /home/ansadmin/test.txt
        state: touch 
        
