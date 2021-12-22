@@ -12,6 +12,6 @@
        msg: 
         - "My Name is {{name}}"
         - "I am working in {{Company}} company"
-        - "My current working location {{Location}}"
+        - "My current working location {{Location|type_debug}}"
 
       
