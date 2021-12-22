@@ -5,7 +5,7 @@
    tasks:
     - name: Copy the files from Ansible Engine to Managed Nodes
       copy: 
-       src: file1cp.txt
+       src: /home/ansadmin/file1cp.txt
        dest: /home/ansadmin/
    ignore_errors: yes
        
