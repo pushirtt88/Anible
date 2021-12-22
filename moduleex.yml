@@ -10,7 +10,7 @@
    ignore_errors: yes
        
  - name: File creation
-   hosts: DB Server
+   hosts: DB_Server
    gather_facts: false
    tasks:
     - name: create the file 
