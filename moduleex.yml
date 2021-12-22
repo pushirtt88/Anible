@@ -1,0 +1,19 @@
+---
+ - name: Copy Module
+   hosts: webserver
+   gather_facts: false
+   tasks:
+    - name: Copy the files from Ansible Engine to Managed Nodes
+      copy: 
+       src: /home/ansadmin/file1cp.txt
+       dest: /home/ansadmin/
+       
+ - name: File creation
+   hosts: DB Server
+   gather_facts: false
+   tasks:
+    - name: create the file 
+      file: 
+       path: /home/admin
+       state: touch 
+       
