@@ -5,7 +5,9 @@
    tasks:
     - name: Install Patching
       yum: 
-       name: http 
+       name: "*"
        state: latest
       become: yes
+    - name: Restart the server
+      reboot: 
        
